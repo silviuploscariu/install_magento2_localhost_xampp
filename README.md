@@ -10,17 +10,17 @@
 3. Install Magento v2.3.3
     LINK: https://magento.com/tech-resources/download -> 2.3.3 + Include sample data
 
-    a. Unzip 'Magento-2.3.3.zip' in 'XAMPP-directory\htdocs\APP-directory'
-    b. Go to 'localhost/APP-directory/setup
+    - Unzip 'Magento-2.3.3.zip' in 'XAMPP-directory\htdocs\APP-directory'
+    - Go to 'localhost/APP-directory/setup
 
-    c. CLICK -> 'Agree and Setup Magento'
-    d. CLICK -> 'Start Readiness Check'
-    e. If you have errors check if you complete modification in php.ini from step 2.
-    f. CLICK -> 'Next'
-    g. Complete info with database name, password, user -> CLICK -> 'Next' 
-    h. Type in 'Magento Admin Address' only 'admin' -> CLICK -> 'Next'
-    i. Let default to all -> CLICK -> 'Next'
-    j. Complete with following
+    - CLICK -> 'Agree and Setup Magento'
+    - CLICK -> 'Start Readiness Check'
+    - If you have errors check if you complete modification in php.ini from step 2.
+    - CLICK -> 'Next'
+    - Complete info with database name, password, user -> CLICK -> 'Next' 
+    - Type in 'Magento Admin Address' only 'admin' -> CLICK -> 'Next'
+    - Let default to all -> CLICK -> 'Next'
+    - Complete with following
 
         Example: 
 
@@ -29,12 +29,12 @@
         - New Password: admin123
         - Confirm Password: admin123
     
-    k. CLICK -> 'Install Now' and wait to complete the install
+    - CLICK -> 'Install Now' and wait to complete the install
 
 4. Configurations
-    a. Open CMD (Windows -> Type -> 'cmd' -> PRESS -> Enter) or Terminal
-    b. Go to your directory ex "cd: 'XAMPP-directory\htdocs\APP-directory'"
-    c. Run Comands:
+    - Open CMD (Windows -> Type -> 'cmd' -> PRESS -> Enter) or Terminal
+    - Go to your directory ex "cd: 'XAMPP-directory\htdocs\APP-directory'"
+    - Run Comands:
         - php bin/magento setup:upgrade
         - php bin/magento setup:static-content:deploy -f
         - php bin/magento setup:di:compile
@@ -46,7 +46,7 @@
             - rmdir /s generated
                 Type 'Y'
         - php bin/magento c:f
-    d. Go to 'XAMPP-directory\htdocs\APP-directory\vendor\magento\framework\View\Element\Template\File' \
+    - Go to 'XAMPP-directory\htdocs\APP-directory\vendor\magento\framework\View\Element\Template\File' \
         - Open in editor 'Validator.php'
         - Replace 
             $realPath = $this->fileDriver->getRealPath($path);
@@ -60,6 +60,3 @@
     - In my case XAMPP-directory is 'D:\XAMPP'
     - In my case APP-directory is 'magento2'
 
-
-
-# install_magento2_localhost_xampp
